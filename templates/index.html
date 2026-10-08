@@ -4,23 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Study Planner</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 
 <body>
 
-    <h1>📚 Smart Study Planner</h1>
+    <div class="container">
 
-    <p>Plan your studies. Track your progress. Achieve your goals.</p>
+        <h1>📚 Smart Study Planner</h1>
 
-    <h2>Add a Subject</h2>
+        <p class="subtitle">
+            Plan your studies. Track your progress. Achieve your goals.
+        </p>
 
-    <input type="text" id="subject" placeholder="Enter subject">
+        <div class="card">
 
-    <button onclick="addSubject()">Add Subject</button>
+            <h2>Add a Subject</h2>
 
-    <h2>My Subjects</h2>
+            <input
+                type="text"
+                id="subject"
+                placeholder="Enter subject"
+            >
 
-    <ul id="subjectList"></ul>
+            <button onclick="addSubject()">
+                Add Subject
+            </button>
+
+        </div>
+
+        <div class="card">
+
+            <h2>My Subjects</h2>
+
+            <ul id="subjectList"></ul>
+
+        </div>
+
+    </div>
 
     <script src="/static/script.js"></script>
 
